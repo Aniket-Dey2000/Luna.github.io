@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Luna | Aniket Dey |</title>
+    <link
+      rel="icon"
+      href="https://icon-library.com/images/moon-icon-png/moon-icon-png-3.jpg"
+      type="image/x-icon "
+      style="border-radius: 1.2em"
+    />
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <a
+        href="https://www.linkedin.com/in/aniket-dey-a014361a1/"
+        target="_blank"
+        class="logo"
+        id="Aniket"
+        >Aniket</a
+      >
+      <ul>
+        <li><a href="#" class="active" id="Home">Home</a></li>
+        <li><a href="#sec" id="About">About</a></li>
+        <li>
+          <a
+            href="https://aniket-dey2000.github.io/Aniket-Music-Hub/"
+            id="music"
+            target="_blank"
+            >Music Hub</a
+          >
+        </li>
+        <li>
+          <a href="index1.html" id="Contact" target="_blank">Contact Me</a>
+        </li>
+      </ul>
+    </header>
+    <section>
+      <img src="stars.png" id="stars" />
+      <img src="moon.png" id="moon" />
+      <img src="mountains_behind.png" id="mountains_behind" />
+      <h2 id="text">Moon Light</h2>
+      <a href="#sec" id="btn">Explore</a>
+      <img src="mountains_front.png" id="mountains_front" />
+    </section>
+    <div class="sec" id="sec">
+      <h2>The night walked down the sky with the moon in her hand.</h2>
+      <p>
+        The moon, the largest and brightest object in the night sky, has long
+        inspired curiosity and wonder. It appears at night, the time of sleep
+        and dreaming that sometimes seems to approach the borders of death and
+        the afterlife. Radiating an air of mystery and magic, the moon is also
+        associated with love and often serves as a symbol of unattainable
+        beauty. Unlike the sun, the moon does not present the same face every
+        day. It waxes, or grows larger, until it becomes a glowing silver-white
+        disk. Then night by night it wanes, or shrinks, to a curved sliver until
+        it vanishes altogether. A few days later a slender new moon appears and
+        begins to grow again in an endless cycle that
+        <br />
+        <br />
+        <b style="text-decoration: underline; font-size: 30px"
+          >Going Moon-Mad</b
+        >
+        <br />
+        People once believed that moonlight had a powerful effect on human
+        behavior. Those who acted strangely were said to be "moonstruck," and
+        lunacy, a term for madness, comes from Luna, the Latin name for the moon
+        goddess. The Japanese believed that the moon was a god with powers to
+        foretell the future. Priests would study the moon's reflection in a
+        mirror, believing that if they gazed directly at the moon, it might
+        drive them mad. Superstitions about the moon's evil influence made some
+        people refuse to sleep in a place where moonbeams could touch them. In
+        the 1200s, the English philosopher Roger Bacon wrote, "Many have died
+        from not protecting themselves from the rays of the moon."
+        <br />
+        <br />
+        legends explain the appearance of the moon, whose mottled surface has
+        suggested various shapes and identities. The "man in the moon" is one
+        common interpretation thought to have originated from the biblical book
+        of Numbers, which describes a man carrying a load of sticks. People have
+        also interpreted the shapes as frogs and toads, and rabbits in the moon
+        occur in many mythologies. In China and Japan the lunar rabbit is said
+        to mix a potion that gives immortality.
+        <br />
+        <br />
+        <b style="text-decoration: underline; font-size: 30px"
+          >Sky above earth below, peace within.</b
+        >
+        <br />
+        The mountains stand eternal, a witness to history. Sometimes a fading
+        gray historical marker will dot the landscape in an effort to inform
+        motorists of people and events someone wishes remembered. More likely,
+        the past hides unnoticed in history books or passed along with a mix of
+        legends and myth in our mountain lore.
+        <br />
+        <br />
+        The Earth asked Vishnu, “Why do you come in the form of mountains and
+        not in your own form?” Vishnu replied: “The pleasure that exists in
+        mountains is greater than that of animate beings, for they feel no heat,
+        nor cold, nor pain, nor anger, nor fear, nor pleasure. We three gods as
+        mountains will reside in the earth for the benefit of mankind.”
+      </p>
+    </div>
+
+    <script>
+      let stars = document.getElementById("stars");
+      let moon = document.getElementById("moon");
+      let mountains_behind = document.getElementById("mountains_behind");
+      let text = document.getElementById("text");
+      let btn = document.getElementById("btn");
+      let mountains_front = document.getElementById("mountains_front");
+      let header = document.querySelector("header");
+
+      window.addEventListener("scroll", function () {
+        let value = window.scrollY;
+        stars.style.left = value * 0.25 + "px";
+        moon.style.top = value * 1.05 + "px";
+        mountains_behind.style.top = value * 0.05 + "px";
+        mountains_front.style.top = value * 0 + "px";
+        text.style.marginRight = value * 4 + "px";
+        text.style.marginTop = value * 1.5 + "px";
+        btn.style.marginTop = value * 1.5 + "px";
+        header.style.top = value * 0.05 + "px";
+      });
+    </script>
+  </body>
+</html>
